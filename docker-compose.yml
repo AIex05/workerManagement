@@ -1,0 +1,17 @@
+services:
+  worker-management:
+    build: .
+    container_name: worker_management_app
+    ports:
+      - "127.0.0.1:8504:8501"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    networks:
+      - gofo
+    restart: unless-stopped
+
+networks:
+  gofo:
+    external: true
