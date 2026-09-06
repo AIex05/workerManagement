@@ -1,4 +1,7 @@
 # workerManagement
-# workerManagement
-# workerManagement
-# workerManagement
+UP
+```docker compose up```
+
+DOWN
+```docker compose down```
+
